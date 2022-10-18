@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+    <head>
+        <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <script src="app.js"></script>
-    
+    <div id="content">
+        <h1>Sketcher</h1>
+        <div id="sketchpad">
+        </div>
+        <button onclick="sketchGen()">Create new Sketchpad!</button>
+        <div class="slidecontainer">
+            <input type="range" min="2" max="64" value="16" class="slider" id="myRange">
+        </div>
+        <div id="copyright">
+            <footer>A fragment of your imagination.</footer>
+            <img src="\LogoFull-Red-Transparent.png">
+        </div>
+    </div>
 </body>
 </html>

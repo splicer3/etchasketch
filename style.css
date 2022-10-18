@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+}
+
+@font-face {
+    font-family: imagination;
+    src: url(\RonduitCapitals-Light.otf);
+}
+
+@font-face {
+    font-family: aquire;
+    src: url(\quire.otf);
+}
+
+div#sketchpad {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-family: aquire;
+}
+
+footer {
+    font-family: imagination;
+}
+
+img {
+    max-width: 200px;
+}
