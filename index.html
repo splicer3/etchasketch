@@ -14,9 +14,20 @@
         <h1>Sketcher</h1>
         <div id="sketchpad">
         </div>
-        <button onclick="sketchGen()">Create new Sketchpad!</button>
-        <div class="slide-container">
-            <input type="range" min="2" max="64" value="16" class="slider" id="myRange">
+        <div class="underSketch">
+            <div class="buttons">
+                <button onclick="sketchGen()">Create new Sketchpad!</button>
+                <div class="slide-container">
+                    <input type="range" min="2" max="64" value="16" class="slider" id="myRange">
+                </div>
+            </div>
+            <div class="mode">
+                <div class="modeTxt">Real Etch-A-Sketch mode</div>
+                <label class="switch">
+                    <input type="checkbox" id="switch">
+                    <span class="toggle"></span>
+                </label>
+            </div>
         </div>
         <div class="copyright">
             <footer>A fragment of your imagination.</footer>

@@ -29,6 +29,13 @@ function draw (){
     });
 }
 
+function drawAccurate (){
+    $(".pixels").on("mouseover", function () {
+        if (event.which == 1)
+            $(this).addClass('clickedPixelsWarped');
+    });
+}
+
 // This one generates as much divs as specified by the slider value.
 function sketchGen() {
     document.getElementById('sketchpad').replaceChildren();
@@ -40,5 +47,8 @@ function sketchGen() {
         }
         document.getElementById('row').id = 'rowed';
     }
-    draw();
+    if (document.getElementById('switch').checked)
+        drawAccurate();
+    else
+        draw();
 }
