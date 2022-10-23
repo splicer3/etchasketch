@@ -7,7 +7,7 @@ function createColumn() {
 }
 
 function createDivs() {
-    let div = document.createElement('div');
+    const div = document.createElement('div');
     div.className += ' pixels';
     div.id = 'pixel';
     return document.querySelector('#row').appendChild(div);
@@ -22,6 +22,13 @@ function getValue() {
     return (16);
 }
 
+function draw (){
+    $(".pixels").on("mouseover", function () {
+        if (event.which == 1)
+        $(this).addClass('clickedPixels');
+    });
+}
+
 // This one generates as much divs as specified by the slider value.
 function sketchGen() {
     document.getElementById('sketchpad').replaceChildren();
@@ -33,8 +40,5 @@ function sketchGen() {
         }
         document.getElementById('row').id = 'rowed';
     }
+    draw();
 }
-$(".pixels").on("click", function () {
-    $(".pixels").addClass('clickedPixels');
-});
-
